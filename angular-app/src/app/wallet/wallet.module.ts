@@ -4,6 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { WalletComponent } from './wallet.component';
 import { PromosComponent } from './promos/promos.component';
 import { CuponsComponent } from './cupons/cupons.component';
+import { PocMapComponent } from './poc-map/poc-map.component';
 import { ShopPointsComponent } from './shop-points/shop-points.component';
 import { PromoCardComponent } from './promos/promo-card/promo-card.component';
 import { CouponCardComponent } from './cupons/coupon-card/coupon-card.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
         path: 'coupons',
         component: CuponsComponent
       },
+      {
+        path: 'map',
+        component: PocMapComponent
+      },
       { path: '', redirectTo: 'promos', pathMatch: 'full' },
       { path: '**', redirectTo: 'promos', pathMatch: 'full' }
     ]
@@ -37,7 +42,7 @@ const routes: Routes = [
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 @NgModule({
-  declarations: [WalletComponent, PromosComponent, CuponsComponent, ShopPointsComponent, PromoCardComponent, ModalWindowComponent, CouponCardComponent, CouponCardPromotedComponent, ShopCardComponent, ModalComponent],
+  declarations: [WalletComponent, PromosComponent, CuponsComponent, ShopPointsComponent, PocMapComponent, PromoCardComponent, ModalWindowComponent, CouponCardComponent, CouponCardPromotedComponent, ShopCardComponent, ModalComponent],
   imports: [
     CommonModule, InfiniteScrollModule, RouterModule.forChild(routes)
   ]
