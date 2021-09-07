@@ -1,5 +1,5 @@
 <div class="g-map">
-  <div class="g-map--header">
+  <div class="g-map--header hidden lg:block">
     <h2 class="text-md font-bold">
       Descubre bares y restaurante
       <span class="text-primary-500">
@@ -10,8 +10,18 @@
       Encuentra los mejores establecimientos para ganar puntos
     </p>
   </div>
+  <div class="lg:hidden">
+    <div class="flex items-center">
+      <div class="tab-map">
+        <p>MAPA</p>
+      </div>
+      <div class="tab-map active">
+        <p>LISTA</p>
+      </div>
+    </div>
+  </div>
   <div class="g-map--body">
-    <div class="g-map--body__left">
+    <div class="g-map--body__left active">
       <div class="pointer-events-auto w-full hidden lg:inline-flex flex-shrink-0 px-10 py-4">
         <button class="rounded-full bg-secondary-500 text-neutral-100  inline-flex flex-1 justify-between items-center py-2 px-4 text-sm">
           <span>¿Qué quieres hacer hoy?</span>
@@ -20,9 +30,9 @@
           </svg>
         </button>
       </div>
-      <div class="g-map--body__items flex flex-col px-10 py-4 overflow-y-auto flex-1 lg:px-[32px] lg:pb-[32px] pointer-events-auto">
+      <div class="g-map--body__items flex flex-col px-4 lg:px-10 py-4 overflow-y-auto flex-1 pointer-events-auto">
         <div class="px-2">
-          <div class="item-map">
+          <div class="item-map active">
             <div class="item-map--img">
               <img src="https://co-tc-shopper.s3.amazonaws.com/Tipos%20de%20Tienda/Mini_mercado_3%20%281%29.jpg" alt="Imagen de Cigarrer?a Y Licores Los ?ngeles" class="w-full h-full object-cover">
             </div>
@@ -276,6 +286,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="g-map--body__right">
+      <p>map</p>
+    </div>
+    <div class="g-map--body__footer lg:hidden">
+      <button class="uppercase mt-6 rounded-full bg-primary-500 text-neutral-100 w-full text-center p-3 text-xs font-bold tracking-wider border-2">¿QUÉ QUIERES HACER HOY?</button>
     </div>
   </div>
 </div>
