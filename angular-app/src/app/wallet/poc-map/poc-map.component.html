@@ -1,1 +1,281 @@
-<p>poc-map works!</p>
+<div class="g-map">
+  <div class="g-map--header">
+    <h2 class="text-md font-bold">
+      Descubre bares y restaurante
+      <span class="text-primary-500">
+        cerca a tí
+      </span>
+    </h2>
+    <p class="text-xs text-neutral-700">
+      Encuentra los mejores establecimientos para ganar puntos
+    </p>
+  </div>
+  <div class="g-map--body">
+    <div class="g-map--body__left">
+      <div class="pointer-events-auto w-full hidden lg:inline-flex flex-shrink-0 px-10 py-4">
+        <button class="rounded-full bg-secondary-500 text-neutral-100  inline-flex flex-1 justify-between items-center py-2 px-4 text-sm">
+          <span>¿Qué quieres hacer hoy?</span>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.7 0H3.3C2.42479 0 1.58542 0.347678 0.966548 0.966547C0.347678 1.58542 1.98966e-07 2.42478 1.98966e-07 3.3V4.587C-0.000157528 5.04124 0.093463 5.49061 0.275 5.907V5.973C0.430408 6.32607 0.650532 6.64692 0.924 6.919L7.7 13.651V20.9C7.69963 21.0869 7.7469 21.2709 7.83736 21.4345C7.92782 21.5981 8.05848 21.7359 8.217 21.835C8.39206 21.9435 8.59405 22.0007 8.8 22C8.9722 21.999 9.14175 21.9575 9.295 21.879L13.695 19.679C13.8764 19.5876 14.029 19.4477 14.1357 19.2749C14.2425 19.1021 14.2994 18.9031 14.3 18.7V13.651L21.032 6.919C21.3055 6.64692 21.5256 6.32607 21.681 5.973V5.907C21.8777 5.49387 21.9863 5.04436 22 4.587V3.3C22 2.42478 21.6523 1.58542 21.0335 0.966547C20.4146 0.347678 19.5752 0 18.7 0ZM12.419 12.419C12.3171 12.5218 12.2364 12.6437 12.1817 12.7777C12.1269 12.9117 12.0992 13.0552 12.1 13.2V18.018L9.9 19.118V13.2C9.90084 13.0552 9.87309 12.9117 9.81835 12.7777C9.76361 12.6437 9.68295 12.5218 9.581 12.419L3.751 6.6H18.249L12.419 12.419ZM19.8 4.4H2.2V3.3C2.2 3.00826 2.31589 2.72847 2.52218 2.52218C2.72847 2.31589 3.00826 2.2 3.3 2.2H18.7C18.9917 2.2 19.2715 2.31589 19.4778 2.52218C19.6841 2.72847 19.8 3.00826 19.8 3.3V4.4Z" fill="currentColor"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="g-map--body__items flex flex-col px-10 py-4 overflow-y-auto flex-1 lg:px-[32px] lg:pb-[32px] pointer-events-auto">
+        <div class="px-2">
+          <div class="item-map">
+            <div class="item-map--img">
+              <img src="https://co-tc-shopper.s3.amazonaws.com/Tipos%20de%20Tienda/Mini_mercado_3%20%281%29.jpg" alt="Imagen de Cigarrer?a Y Licores Los ?ngeles" class="w-full h-full object-cover">
+            </div>
+            <div class="item-map--cont pl-3">
+              <div class="flex">
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="text-xs text-neutral-400 pl-2">5</div>
+              </div>
+              <h6 class="text-sm font-bold line-clamp-1">Cigarrerá y licores los ángeles</h6>
+              <hr class="w-full my-1 border-neutral-300">
+              <div class="text-xxs text-success">Abierto</div>
+              <div class="text-xxs capitalize line-clamp-1 text-neutral-700">KR 52 127D-37</div>
+              <div class="flex mt-2">
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <p class="absolute top-0 right-0">
+                    <span class="block w-3 h-3 bg-primary-500 text-white rounded-full text-xxs font-normal">2</span>
+                  </p>
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8748 1.80176L1.7915 13.0254" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.97917 5.00844C4.07223 5.00844 4.95833 4.11112 4.95833 3.00422C4.95833 1.89732 4.07223 1 2.97917 1C1.8861 1 1 1.89732 1 3.00422C1 4.11112 1.8861 5.00844 2.97917 5.00844Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.6874 13.8273C12.7805 13.8273 13.6666 12.93 13.6666 11.8231C13.6666 10.7162 12.7805 9.81885 11.6874 9.81885C10.5944 9.81885 9.70825 10.7162 9.70825 11.8231C9.70825 12.93 10.5944 13.8273 11.6874 13.8273Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="capitalize text-xxs">Promos</span>
+                  </div>
+                </button>
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2.73318C11.6739 1.40709 9.87539 0.662109 8.00002 0.662109C6.12466 0.662109 4.3261 1.40709 3.00002 2.73318C1.67394 4.05926 0.928955 5.85781 0.928955 7.73318C0.928955 9.60854 1.67394 11.4071 3.00002 12.7332L7.39169 17.1332C7.46916 17.2113 7.56133 17.2733 7.66287 17.3156C7.76442 17.3579 7.87334 17.3797 7.98335 17.3797C8.09336 17.3797 8.20229 17.3579 8.30383 17.3156C8.40538 17.2733 8.49755 17.2113 8.57502 17.1332L13 12.6915C14.3206 11.3709 15.0624 9.57989 15.0624 7.71234C15.0624 5.8448 14.3206 4.05374 13 2.73318ZM11.8084 11.4998L8.00002 15.3248L4.19169 11.4998C3.43931 10.7468 2.92709 9.78755 2.71977 8.74342C2.51245 7.69929 2.61935 6.61713 3.02694 5.63374C3.43454 4.65036 4.12454 3.80988 5.00971 3.21857C5.89489 2.62726 6.93551 2.31166 8.00002 2.31166C9.06453 2.31166 10.1052 2.62726 10.9903 3.21857C11.8755 3.80988 12.5655 4.65036 12.9731 5.63374C13.3807 6.61713 13.4876 7.69929 13.2803 8.74342C13.073 9.78755 12.5607 10.7468 11.8084 11.4998ZM5.50002 5.17484C4.82728 5.84965 4.44952 6.76365 4.44952 7.71651C4.44952 8.66937 4.82728 9.58337 5.50002 10.2582C5.99982 10.7588 6.63634 11.1007 7.32973 11.241C8.02312 11.3813 8.74248 11.3137 9.39758 11.0466C10.0527 10.7796 10.6143 10.3251 11.0121 9.74005C11.4098 9.15503 11.626 8.46557 11.6334 7.75818C11.6371 7.28585 11.5461 6.81756 11.3658 6.381C11.1854 5.94444 10.9194 5.54847 10.5834 5.21651C10.2531 4.87866 9.85925 4.60946 9.42454 4.4244C8.98983 4.23934 8.52281 4.14207 8.05036 4.1382C7.57791 4.13433 7.10935 4.22392 6.67166 4.40183C6.23397 4.57974 5.83579 4.84245 5.50002 5.17484ZM9.40835 9.07484C9.09256 9.39546 8.6752 9.59643 8.22763 9.64339C7.78006 9.69034 7.33007 9.58038 6.95461 9.33228C6.57915 9.08419 6.30152 8.71338 6.16919 8.28325C6.03687 7.85311 6.05806 7.39037 6.22915 6.97414C6.40024 6.5579 6.71061 6.21402 7.10718 6.00129C7.50375 5.78856 7.9619 5.72018 8.4033 5.80786C8.8447 5.89553 9.24195 6.13381 9.52711 6.48195C9.81228 6.8301 9.96766 7.26648 9.96669 7.71651C9.95456 8.2309 9.73876 8.71945 9.36669 9.07484H9.40835Z" fill="currentColor"></path></svg>
+                    <span class="capitalize text-xxs">Llévame</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="item-map--arrow"> 
+              <a href="">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.0659 12.2308L11.4725 7.63747C11.3718 7.53593 11.252 7.45533 11.12 7.40033C10.988 7.34533 10.8464 7.31702 10.7034 7.31702C10.5604 7.31702 10.4188 7.34533 10.2867 7.40033C10.1547 7.45533 10.0349 7.53593 9.9342 7.63746C9.73242 7.84044 9.61917 8.11501 9.61917 8.40121C9.61917 8.68742 9.73242 8.96199 9.9342 9.16496L13.7692 13L9.93419 16.835C9.73242 17.0379 9.61917 17.3125 9.61917 17.5987C9.61917 17.8849 9.73242 18.1595 9.93419 18.3625C10.0354 18.4629 10.1555 18.5423 10.2875 18.5962C10.4195 18.6501 10.5608 18.6775 10.7034 18.6766C10.8459 18.6775 10.9873 18.6501 11.1193 18.5962C11.2513 18.5423 11.3713 18.4629 11.4725 18.3625L16.0659 13.7691C16.1674 13.6684 16.248 13.5486 16.303 13.4166C16.358 13.2846 16.3863 13.143 16.3863 13C16.3863 12.857 16.358 12.7154 16.303 12.5833C16.248 12.4513 16.1674 12.3315 16.0659 12.2308Z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="item-map">
+            <div class="item-map--img">
+              <img src="https://co-tc-shopper.s3.amazonaws.com/Tipos%20de%20Tienda/Mini_mercado_3%20%281%29.jpg" alt="Imagen de Cigarrer?a Y Licores Los ?ngeles" class="w-full h-full object-cover">
+            </div>
+            <div class="item-map--cont pl-3">
+              <div class="flex">
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="text-xs text-neutral-400 pl-2">5</div>
+              </div>
+              <h6 class="text-sm font-bold line-clamp-1">Cigarrerá y licores los ángeles</h6>
+              <hr class="w-full my-1 border-neutral-300">
+              <div class="text-xxs text-success">Abierto</div>
+              <div class="text-xxs capitalize line-clamp-1 text-neutral-700">KR 52 127D-37</div>
+              <div class="flex mt-2">
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <p class="absolute top-0 right-0">
+                    <span class="block w-3 h-3 bg-primary-500 text-white rounded-full text-xxs font-normal">2</span>
+                  </p>
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8748 1.80176L1.7915 13.0254" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.97917 5.00844C4.07223 5.00844 4.95833 4.11112 4.95833 3.00422C4.95833 1.89732 4.07223 1 2.97917 1C1.8861 1 1 1.89732 1 3.00422C1 4.11112 1.8861 5.00844 2.97917 5.00844Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.6874 13.8273C12.7805 13.8273 13.6666 12.93 13.6666 11.8231C13.6666 10.7162 12.7805 9.81885 11.6874 9.81885C10.5944 9.81885 9.70825 10.7162 9.70825 11.8231C9.70825 12.93 10.5944 13.8273 11.6874 13.8273Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="capitalize text-xxs">Promos</span>
+                  </div>
+                </button>
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2.73318C11.6739 1.40709 9.87539 0.662109 8.00002 0.662109C6.12466 0.662109 4.3261 1.40709 3.00002 2.73318C1.67394 4.05926 0.928955 5.85781 0.928955 7.73318C0.928955 9.60854 1.67394 11.4071 3.00002 12.7332L7.39169 17.1332C7.46916 17.2113 7.56133 17.2733 7.66287 17.3156C7.76442 17.3579 7.87334 17.3797 7.98335 17.3797C8.09336 17.3797 8.20229 17.3579 8.30383 17.3156C8.40538 17.2733 8.49755 17.2113 8.57502 17.1332L13 12.6915C14.3206 11.3709 15.0624 9.57989 15.0624 7.71234C15.0624 5.8448 14.3206 4.05374 13 2.73318ZM11.8084 11.4998L8.00002 15.3248L4.19169 11.4998C3.43931 10.7468 2.92709 9.78755 2.71977 8.74342C2.51245 7.69929 2.61935 6.61713 3.02694 5.63374C3.43454 4.65036 4.12454 3.80988 5.00971 3.21857C5.89489 2.62726 6.93551 2.31166 8.00002 2.31166C9.06453 2.31166 10.1052 2.62726 10.9903 3.21857C11.8755 3.80988 12.5655 4.65036 12.9731 5.63374C13.3807 6.61713 13.4876 7.69929 13.2803 8.74342C13.073 9.78755 12.5607 10.7468 11.8084 11.4998ZM5.50002 5.17484C4.82728 5.84965 4.44952 6.76365 4.44952 7.71651C4.44952 8.66937 4.82728 9.58337 5.50002 10.2582C5.99982 10.7588 6.63634 11.1007 7.32973 11.241C8.02312 11.3813 8.74248 11.3137 9.39758 11.0466C10.0527 10.7796 10.6143 10.3251 11.0121 9.74005C11.4098 9.15503 11.626 8.46557 11.6334 7.75818C11.6371 7.28585 11.5461 6.81756 11.3658 6.381C11.1854 5.94444 10.9194 5.54847 10.5834 5.21651C10.2531 4.87866 9.85925 4.60946 9.42454 4.4244C8.98983 4.23934 8.52281 4.14207 8.05036 4.1382C7.57791 4.13433 7.10935 4.22392 6.67166 4.40183C6.23397 4.57974 5.83579 4.84245 5.50002 5.17484ZM9.40835 9.07484C9.09256 9.39546 8.6752 9.59643 8.22763 9.64339C7.78006 9.69034 7.33007 9.58038 6.95461 9.33228C6.57915 9.08419 6.30152 8.71338 6.16919 8.28325C6.03687 7.85311 6.05806 7.39037 6.22915 6.97414C6.40024 6.5579 6.71061 6.21402 7.10718 6.00129C7.50375 5.78856 7.9619 5.72018 8.4033 5.80786C8.8447 5.89553 9.24195 6.13381 9.52711 6.48195C9.81228 6.8301 9.96766 7.26648 9.96669 7.71651C9.95456 8.2309 9.73876 8.71945 9.36669 9.07484H9.40835Z" fill="currentColor"></path></svg>
+                    <span class="capitalize text-xxs">Llévame</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="item-map--arrow"> 
+              <a href="">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.0659 12.2308L11.4725 7.63747C11.3718 7.53593 11.252 7.45533 11.12 7.40033C10.988 7.34533 10.8464 7.31702 10.7034 7.31702C10.5604 7.31702 10.4188 7.34533 10.2867 7.40033C10.1547 7.45533 10.0349 7.53593 9.9342 7.63746C9.73242 7.84044 9.61917 8.11501 9.61917 8.40121C9.61917 8.68742 9.73242 8.96199 9.9342 9.16496L13.7692 13L9.93419 16.835C9.73242 17.0379 9.61917 17.3125 9.61917 17.5987C9.61917 17.8849 9.73242 18.1595 9.93419 18.3625C10.0354 18.4629 10.1555 18.5423 10.2875 18.5962C10.4195 18.6501 10.5608 18.6775 10.7034 18.6766C10.8459 18.6775 10.9873 18.6501 11.1193 18.5962C11.2513 18.5423 11.3713 18.4629 11.4725 18.3625L16.0659 13.7691C16.1674 13.6684 16.248 13.5486 16.303 13.4166C16.358 13.2846 16.3863 13.143 16.3863 13C16.3863 12.857 16.358 12.7154 16.303 12.5833C16.248 12.4513 16.1674 12.3315 16.0659 12.2308Z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="item-map">
+            <div class="item-map--img">
+              <img src="https://co-tc-shopper.s3.amazonaws.com/Tipos%20de%20Tienda/Mini_mercado_3%20%281%29.jpg" alt="Imagen de Cigarrer?a Y Licores Los ?ngeles" class="w-full h-full object-cover">
+            </div>
+            <div class="item-map--cont pl-3">
+              <div class="flex">
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="text-xs text-neutral-400 pl-2">5</div>
+              </div>
+              <h6 class="text-sm font-bold line-clamp-1">Cigarrerá y licores los ángeles</h6>
+              <hr class="w-full my-1 border-neutral-300">
+              <div class="text-xxs text-success">Abierto</div>
+              <div class="text-xxs capitalize line-clamp-1 text-neutral-700">KR 52 127D-37</div>
+              <div class="flex mt-2">
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <p class="absolute top-0 right-0">
+                    <span class="block w-3 h-3 bg-primary-500 text-white rounded-full text-xxs font-normal">2</span>
+                  </p>
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8748 1.80176L1.7915 13.0254" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.97917 5.00844C4.07223 5.00844 4.95833 4.11112 4.95833 3.00422C4.95833 1.89732 4.07223 1 2.97917 1C1.8861 1 1 1.89732 1 3.00422C1 4.11112 1.8861 5.00844 2.97917 5.00844Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.6874 13.8273C12.7805 13.8273 13.6666 12.93 13.6666 11.8231C13.6666 10.7162 12.7805 9.81885 11.6874 9.81885C10.5944 9.81885 9.70825 10.7162 9.70825 11.8231C9.70825 12.93 10.5944 13.8273 11.6874 13.8273Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="capitalize text-xxs">Promos</span>
+                  </div>
+                </button>
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2.73318C11.6739 1.40709 9.87539 0.662109 8.00002 0.662109C6.12466 0.662109 4.3261 1.40709 3.00002 2.73318C1.67394 4.05926 0.928955 5.85781 0.928955 7.73318C0.928955 9.60854 1.67394 11.4071 3.00002 12.7332L7.39169 17.1332C7.46916 17.2113 7.56133 17.2733 7.66287 17.3156C7.76442 17.3579 7.87334 17.3797 7.98335 17.3797C8.09336 17.3797 8.20229 17.3579 8.30383 17.3156C8.40538 17.2733 8.49755 17.2113 8.57502 17.1332L13 12.6915C14.3206 11.3709 15.0624 9.57989 15.0624 7.71234C15.0624 5.8448 14.3206 4.05374 13 2.73318ZM11.8084 11.4998L8.00002 15.3248L4.19169 11.4998C3.43931 10.7468 2.92709 9.78755 2.71977 8.74342C2.51245 7.69929 2.61935 6.61713 3.02694 5.63374C3.43454 4.65036 4.12454 3.80988 5.00971 3.21857C5.89489 2.62726 6.93551 2.31166 8.00002 2.31166C9.06453 2.31166 10.1052 2.62726 10.9903 3.21857C11.8755 3.80988 12.5655 4.65036 12.9731 5.63374C13.3807 6.61713 13.4876 7.69929 13.2803 8.74342C13.073 9.78755 12.5607 10.7468 11.8084 11.4998ZM5.50002 5.17484C4.82728 5.84965 4.44952 6.76365 4.44952 7.71651C4.44952 8.66937 4.82728 9.58337 5.50002 10.2582C5.99982 10.7588 6.63634 11.1007 7.32973 11.241C8.02312 11.3813 8.74248 11.3137 9.39758 11.0466C10.0527 10.7796 10.6143 10.3251 11.0121 9.74005C11.4098 9.15503 11.626 8.46557 11.6334 7.75818C11.6371 7.28585 11.5461 6.81756 11.3658 6.381C11.1854 5.94444 10.9194 5.54847 10.5834 5.21651C10.2531 4.87866 9.85925 4.60946 9.42454 4.4244C8.98983 4.23934 8.52281 4.14207 8.05036 4.1382C7.57791 4.13433 7.10935 4.22392 6.67166 4.40183C6.23397 4.57974 5.83579 4.84245 5.50002 5.17484ZM9.40835 9.07484C9.09256 9.39546 8.6752 9.59643 8.22763 9.64339C7.78006 9.69034 7.33007 9.58038 6.95461 9.33228C6.57915 9.08419 6.30152 8.71338 6.16919 8.28325C6.03687 7.85311 6.05806 7.39037 6.22915 6.97414C6.40024 6.5579 6.71061 6.21402 7.10718 6.00129C7.50375 5.78856 7.9619 5.72018 8.4033 5.80786C8.8447 5.89553 9.24195 6.13381 9.52711 6.48195C9.81228 6.8301 9.96766 7.26648 9.96669 7.71651C9.95456 8.2309 9.73876 8.71945 9.36669 9.07484H9.40835Z" fill="currentColor"></path></svg>
+                    <span class="capitalize text-xxs">Llévame</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="item-map--arrow"> 
+              <a href="">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.0659 12.2308L11.4725 7.63747C11.3718 7.53593 11.252 7.45533 11.12 7.40033C10.988 7.34533 10.8464 7.31702 10.7034 7.31702C10.5604 7.31702 10.4188 7.34533 10.2867 7.40033C10.1547 7.45533 10.0349 7.53593 9.9342 7.63746C9.73242 7.84044 9.61917 8.11501 9.61917 8.40121C9.61917 8.68742 9.73242 8.96199 9.9342 9.16496L13.7692 13L9.93419 16.835C9.73242 17.0379 9.61917 17.3125 9.61917 17.5987C9.61917 17.8849 9.73242 18.1595 9.93419 18.3625C10.0354 18.4629 10.1555 18.5423 10.2875 18.5962C10.4195 18.6501 10.5608 18.6775 10.7034 18.6766C10.8459 18.6775 10.9873 18.6501 11.1193 18.5962C11.2513 18.5423 11.3713 18.4629 11.4725 18.3625L16.0659 13.7691C16.1674 13.6684 16.248 13.5486 16.303 13.4166C16.358 13.2846 16.3863 13.143 16.3863 13C16.3863 12.857 16.358 12.7154 16.303 12.5833C16.248 12.4513 16.1674 12.3315 16.0659 12.2308Z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="item-map">
+            <div class="item-map--img">
+              <img src="https://co-tc-shopper.s3.amazonaws.com/Tipos%20de%20Tienda/Mini_mercado_3%20%281%29.jpg" alt="Imagen de Cigarrer?a Y Licores Los ?ngeles" class="w-full h-full object-cover">
+            </div>
+            <div class="item-map--cont pl-3">
+              <div class="flex">
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="item-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" focusable="false" class="POCRatingstyles__StyledIcon-sc-1mazlla-1 POCRatingstyles__StyledStar-sc-1mazlla-2 bgGlAh kSOOde" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg); vertical-align: -0.125em;">
+                    <path d="M16 2l-4.55 9.22l-10.17 1.47l7.36 7.18L6.9 30l9.1-4.78L25.1 30l-1.74-10.13l7.36-7.17l-10.17-1.48z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="text-xs text-neutral-400 pl-2">5</div>
+              </div>
+              <h6 class="text-sm font-bold line-clamp-1">Cigarrerá y licores los ángeles</h6>
+              <hr class="w-full my-1 border-neutral-300">
+              <div class="text-xxs text-success">Abierto</div>
+              <div class="text-xxs capitalize line-clamp-1 text-neutral-700">KR 52 127D-37</div>
+              <div class="flex mt-2">
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <p class="absolute top-0 right-0">
+                    <span class="block w-3 h-3 bg-primary-500 text-white rounded-full text-xxs font-normal">2</span>
+                  </p>
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8748 1.80176L1.7915 13.0254" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.97917 5.00844C4.07223 5.00844 4.95833 4.11112 4.95833 3.00422C4.95833 1.89732 4.07223 1 2.97917 1C1.8861 1 1 1.89732 1 3.00422C1 4.11112 1.8861 5.00844 2.97917 5.00844Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.6874 13.8273C12.7805 13.8273 13.6666 12.93 13.6666 11.8231C13.6666 10.7162 12.7805 9.81885 11.6874 9.81885C10.5944 9.81885 9.70825 10.7162 9.70825 11.8231C9.70825 12.93 10.5944 13.8273 11.6874 13.8273Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="capitalize text-xxs">Promos</span>
+                  </div>
+                </button>
+                <button class="btn-gray relative shadow-md flex-col w-10 h-10 mr-2">
+                  <div class="flex flex-col justify-center items-center w-full h-full">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2.73318C11.6739 1.40709 9.87539 0.662109 8.00002 0.662109C6.12466 0.662109 4.3261 1.40709 3.00002 2.73318C1.67394 4.05926 0.928955 5.85781 0.928955 7.73318C0.928955 9.60854 1.67394 11.4071 3.00002 12.7332L7.39169 17.1332C7.46916 17.2113 7.56133 17.2733 7.66287 17.3156C7.76442 17.3579 7.87334 17.3797 7.98335 17.3797C8.09336 17.3797 8.20229 17.3579 8.30383 17.3156C8.40538 17.2733 8.49755 17.2113 8.57502 17.1332L13 12.6915C14.3206 11.3709 15.0624 9.57989 15.0624 7.71234C15.0624 5.8448 14.3206 4.05374 13 2.73318ZM11.8084 11.4998L8.00002 15.3248L4.19169 11.4998C3.43931 10.7468 2.92709 9.78755 2.71977 8.74342C2.51245 7.69929 2.61935 6.61713 3.02694 5.63374C3.43454 4.65036 4.12454 3.80988 5.00971 3.21857C5.89489 2.62726 6.93551 2.31166 8.00002 2.31166C9.06453 2.31166 10.1052 2.62726 10.9903 3.21857C11.8755 3.80988 12.5655 4.65036 12.9731 5.63374C13.3807 6.61713 13.4876 7.69929 13.2803 8.74342C13.073 9.78755 12.5607 10.7468 11.8084 11.4998ZM5.50002 5.17484C4.82728 5.84965 4.44952 6.76365 4.44952 7.71651C4.44952 8.66937 4.82728 9.58337 5.50002 10.2582C5.99982 10.7588 6.63634 11.1007 7.32973 11.241C8.02312 11.3813 8.74248 11.3137 9.39758 11.0466C10.0527 10.7796 10.6143 10.3251 11.0121 9.74005C11.4098 9.15503 11.626 8.46557 11.6334 7.75818C11.6371 7.28585 11.5461 6.81756 11.3658 6.381C11.1854 5.94444 10.9194 5.54847 10.5834 5.21651C10.2531 4.87866 9.85925 4.60946 9.42454 4.4244C8.98983 4.23934 8.52281 4.14207 8.05036 4.1382C7.57791 4.13433 7.10935 4.22392 6.67166 4.40183C6.23397 4.57974 5.83579 4.84245 5.50002 5.17484ZM9.40835 9.07484C9.09256 9.39546 8.6752 9.59643 8.22763 9.64339C7.78006 9.69034 7.33007 9.58038 6.95461 9.33228C6.57915 9.08419 6.30152 8.71338 6.16919 8.28325C6.03687 7.85311 6.05806 7.39037 6.22915 6.97414C6.40024 6.5579 6.71061 6.21402 7.10718 6.00129C7.50375 5.78856 7.9619 5.72018 8.4033 5.80786C8.8447 5.89553 9.24195 6.13381 9.52711 6.48195C9.81228 6.8301 9.96766 7.26648 9.96669 7.71651C9.95456 8.2309 9.73876 8.71945 9.36669 9.07484H9.40835Z" fill="currentColor"></path></svg>
+                    <span class="capitalize text-xxs">Llévame</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="item-map--arrow"> 
+              <a href="">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.0659 12.2308L11.4725 7.63747C11.3718 7.53593 11.252 7.45533 11.12 7.40033C10.988 7.34533 10.8464 7.31702 10.7034 7.31702C10.5604 7.31702 10.4188 7.34533 10.2867 7.40033C10.1547 7.45533 10.0349 7.53593 9.9342 7.63746C9.73242 7.84044 9.61917 8.11501 9.61917 8.40121C9.61917 8.68742 9.73242 8.96199 9.9342 9.16496L13.7692 13L9.93419 16.835C9.73242 17.0379 9.61917 17.3125 9.61917 17.5987C9.61917 17.8849 9.73242 18.1595 9.93419 18.3625C10.0354 18.4629 10.1555 18.5423 10.2875 18.5962C10.4195 18.6501 10.5608 18.6775 10.7034 18.6766C10.8459 18.6775 10.9873 18.6501 11.1193 18.5962C11.2513 18.5423 11.3713 18.4629 11.4725 18.3625L16.0659 13.7691C16.1674 13.6684 16.248 13.5486 16.303 13.4166C16.358 13.2846 16.3863 13.143 16.3863 13C16.3863 12.857 16.358 12.7154 16.303 12.5833C16.248 12.4513 16.1674 12.3315 16.0659 12.2308Z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
